@@ -1,0 +1,4 @@
+# Project exclude paths
+/neon-common/target/
+/neon-gateway/target/
+/neon-user/target/

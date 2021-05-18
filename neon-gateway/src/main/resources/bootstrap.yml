@@ -1,0 +1,26 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: neon-gateway
+  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+##      routes:
+##        - id: neon-user
+##          uri: lb://neon-user
+##          predicates:
+##            - Path=/getUser**
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: DEV_GROUP
+        namespace: 2b6455b0-a119-417f-9c92-d24f7344731f
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        group: DEV_GROUP
+        namespace: 2b6455b0-a119-417f-9c92-d24f7344731f
