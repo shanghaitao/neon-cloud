@@ -1,6 +1,10 @@
 spring:
   application:
     name: neon-user
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/neon_cloud?useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
   cloud:
     nacos:
       discovery:
